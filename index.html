@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="wide wow-animation">
+  <head>
+    <title>Ejemplo Modal</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<link href="style.css" rel="stylesheet" type="text/css">
+    <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+	<!-- <link href="assets/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css"> -->
+	<!-- <link href="assets/css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css"> -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+	<!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+	<!-- <script src="assets/js/bootstrap.min.js"></script> -->
+	<!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+	<!-- <script src="assets/js/popper.min.js"></script> -->
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+
+	<script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+	
+	<!-- <link href="modals.css" rel="stylesheet" type="text/css"> -->
+  </head>
+  <body>
+	<div class="modal fade" id="EjemploModal" tabindex="-1" role="dialog" aria-labelledby="EjemploModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<form action="registro.php" method="POST">
+				
+					<!-- cabecera del diálogo -->
+					<div class="modal-header">
+					<h5 class="modal-title" id="EjemploModalLabel">Formulario de Registro</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+					</div>
+					
+					<!-- cuerpo del diálogo -->
+					<div class="modal-body">
+						<label for="ci">Documento de Identidad <span>(requerido)</span></label>
+						<input type="text" name="ci" class="form-input" required/>
+						<label for="nombre">Nombre <span>(requerido)</span></label>
+						<input type="text" name="nombre" class="form-input" required/>
+						<label for="apellido">Apellido <span>(requerido)</span></label>
+						<input type="text" name="apellido" class="form-input" / required>
+						<label for="email">Email <span>(requerido)</span></label>
+						<input type="text" name="email" class="form-input" />
+						<label for="celular">Teléfono Celular <span>(requerido)</span></label>
+						<input type="text" name="celular" class="form-input" required/>
+						<label for="organizacion">Entidad a la que pertenece <span>(requerido)</span></label>
+						<input type="text" name="organizacion" class="form-input" />
+					</div>										
+				
+					<!-- pie del diálogo -->
+					<div class="modal-footer">
+						<input class="form-btn" name="submit" type="submit" value="Registrarme!!" />
+					</div>						
+					
+				</form>	
+					
+			</div>
+		</div>
+	</div>
+	
+	<button type="button" data-toggle="modal" data-target="#EjemploModal">Mostrar modal</button>
+      
+  </body>
+</html>
